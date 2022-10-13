@@ -1,0 +1,70 @@
+/* Import the Reset */
+@import url(./reset.css);
+
+/* Import the Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins:wght@200&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Roboto&display=swap');
+
+/* defaults */
+p{
+    margin: 2em; /*changes the spacing in between paragraphs*/
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif'; /*changes the font of everything in the body*/
+}
+
+/* styling the header */
+header{
+    padding: 2em;              /*gives space in the container*/ 
+}
+
+/* styling my h1 tag  */
+h1{
+    font-weight: bold;
+    font-size: 35pt;
+    font-family: 'Alkalami', serif;
+    color: blueviolet;
+    display: flex;
+    justify-content: center;
+    /* other ways to center text  
+       text-align: center; */
+}
+
+/*styling the section as a whole*/
+section {
+    padding: 1em;
+}
+
+/*styling my h2*/
+section div h2 {
+    font-weight: bold;
+    font-size: 15pt;
+}
+/*styling the div within the section*/
+section div {
+    margin-left: auto;         /*moves the div left*/
+    margin-right: auto;        /*moves the div right*/
+    width: 80%;
+    border: 1px solid black; /*adds a border to the whole div*/
+    border-radius: 20px;       /*makes the edges more round or whatever you want*/
+    overflow: hidden;          /*makes anything outside of border disappear*/
+}
+
+/* styling my img  */
+section  div img {
+    width: 300px;             /*changes the size*/
+    float: left;              /*makes it go to the left*/
+    margin-right: 0.5em;      /*adds space to the right*/
+}
+
+/*styling the paragraphs*/
+/*i want the 2nd paragraph to be a different color*/
+section div p:nth-child(even){
+    color: coral;
+}
+
+/*i want to the other 2 to have a background color*/
+section div p:nth-child(odd){
+    background-color: springgreen;
+}
